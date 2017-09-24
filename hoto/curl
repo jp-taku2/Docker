@@ -1,0 +1,24 @@
+echo  "     ##                                            "
+echo  "      ###                                          "
+echo  "        ###                         #              "
+echo  "                                    #        #     "
+echo  "                      ##            #        ##    "
+echo  "   #########           ###          #         ##   "
+echo  "           ##            ###        #          #   "
+echo  "            #                       #          ##  "
+echo  "            #        #######        #           #  "
+echo  "            #             #         #           #  "
+echo  "           ##            #          ##  #       #  "
+echo  "          ##            #            # ##          "
+echo  "         ##           ####           ###           "
+echo  "       ###           ##  #            #            "
+echo  "    ####            ##   #                         "
+echo  "                          ####                     "
+if [ -n "$2" ]; then
+    OPTION=$1
+    URL=$2
+    /usr/bin/curl_def $OPTION $URL
+else
+    URL=$1
+    /usr/bin/curl_def $URL
+fi
